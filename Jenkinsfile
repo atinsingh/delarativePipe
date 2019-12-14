@@ -1,6 +1,8 @@
 pipeline {
         agent {
-            label: 'terminator'
+                node{
+                       label: 'terminator'
+                }
         }
         environment{
             CC_NAME='Build Machine for Human'
