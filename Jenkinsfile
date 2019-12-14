@@ -8,11 +8,11 @@ pipeline {
         stages{
             stage('Dummy Stage'){
                 steps{
-                    if(isUnix()){
+                   // if(isUnix()){
                         sh "echo '$CC_NAME'"
-                    }else {
-                        bat "echo '$CC_NAME'"
-                    }
+                  //  }else {
+                    //    bat "echo '$CC_NAME'"
+                    //}
                     
                 }
                 post{
